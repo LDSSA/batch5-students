@@ -20,6 +20,7 @@ def fit_lin_reg(df):
     fig, ax = plt.subplots()
     df.plot(kind='scatter', x='age', y='minutes_per_day', ax=ax, alpha=.5);
     fit_line(df['age'], df['minutes_per_day'])
+    plt.title('Linear regression fit')
     plt.legend()
     plt.show()
 
