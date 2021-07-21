@@ -177,11 +177,12 @@ def fit_and_plot_linear_regression(data):
 
     lr.fit(X, y)
 
-    plt.scatter(X['x'], data['y'], c='orange', s=5)
-    plt.plot(X['x'], lr.predict(X))
+    plt.scatter(X['x'], data['y'], c='orange', s=5, label="Original data")
+    plt.plot(X['x'], lr.predict(X), label="Regression")
     plt.xlabel('X')
     plt.ylabel('y')
-    plt.title('Linear Regression (R²: {})'.format(lr.score(X, y)))
+    plt.legend(loc="best")
+    plt.title('Regression (R²: {})'.format(lr.score(X, y)))
     
 
 def plot_classification(X, y):   
