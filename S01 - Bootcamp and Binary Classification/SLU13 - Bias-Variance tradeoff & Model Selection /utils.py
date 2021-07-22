@@ -48,6 +48,7 @@ def fit_high_variance_algo(df):
     fig, ax = plt.subplots()
     df.plot(kind='scatter', x='age', y='minutes_per_day', ax=ax, alpha=.5);
     fit_knn(df['age'], df['minutes_per_day'])
+    plt.title('High variance model fit')
     plt.legend()
     plt.show()
 
