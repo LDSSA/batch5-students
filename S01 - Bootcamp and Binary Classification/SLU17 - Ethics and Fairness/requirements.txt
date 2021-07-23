@@ -4,4 +4,5 @@ numpy==1.20.3           # base
 pandas==1.2.4           # base
 matplotlib==3.4.2       # additional - used by many units
 scikit-learn==0.24.2    # base
+ipython==7.25.0
 

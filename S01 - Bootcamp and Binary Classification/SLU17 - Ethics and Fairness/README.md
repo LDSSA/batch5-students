@@ -1,6 +1,6 @@
 # Small Learning Unit 17 - Ethics and Fairness
 
-#### [Presentation](https://docs.google.com/presentation/d/1u0lI6CwRuu71yp5pJeZzh96ys23Jtvb3UnJRzLRCJaE/edit?usp=sharing)
+#### [Presentation](https://docs.google.com/presentation/d/1pim3npigWISdo8hUkyfkgfXh4EXUOIc_avOKN-h1w-Q/)
 
 ## New concepts in this notebook
 
