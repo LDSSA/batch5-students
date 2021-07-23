@@ -1,0 +1,5 @@
+ipython==6.5.0
+nbgrader==0.6.2
+notebook==6.2.0
+numpy==1.20.3
+pandas==1.2.4
