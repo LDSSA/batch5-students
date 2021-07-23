@@ -1,13 +1,16 @@
 # Batch 5 Students Repository
 
-Welcome to Lisbon Data Science Academy Batch 5 Students repository!
+Welcome to **Lisbon Data Science Academy Batch 5** Students repository! 
 
-Here is you'll find all information needed to setup your environment and the
-workflow you'll use during the academy.
+Your first step in this journey is to **carefully read** the steps in this tutorial. You'll learn:
+
+- How to set up your environment;
+- The weekly workflow to follow during the Academy
 
 1. [Initial Setup](#initial-setup)
-    1. [Windows Setup](#Windows-Setup)
-    1. [MacOS Setup](#MacOS-Setup)
+    1. [Windows 10 Setup](#Windows-10-Setup)
+    1. [MacOS Intel Setup](#MacOS-Intel-Setup)
+    1. [MacOS M1 Setup](#MacOS-M1-Setup)
     1. [Ubuntu Setup](#Ubuntu-Setup)
     1. [Setup for all Operating Systems](#Setup-for-all-Operating-Systems)
     1. [Setup Git and GitHub](#Setup-Git-and-GitHub)
@@ -22,59 +25,210 @@ workflow you'll use during the academy.
     1. [Troubleshooting](#Troubleshooting)
     1. [Other](#other)
 
+<br>
+
 ## Initial Setup
 
-### Windows Setup
+<br>
 
-This section deals with setting up either Windows Subsystem for Linux (WSL).
+### Windows 10 Setup
+
+This section deals with setting up Windows Subsystem for Linux (WSL) on Windows 10.
 If you are using MacOS or Linux you can skip this section.
 
-**Why do I need to install either WSL or VMware?**
+**Why do I need to install WSL?**
 
-Because of the differences in command line syntax between Windows vs Mac OS/Linux, it would be a great challenge for us to support and provide instructions for both Operating Systems. For this reason, we’d ask you to install Windows Subsystem for Linux, or VMware, which would enable you to run Linux command lines inside Windows. Keep in mind that these are simply extensions to your Windows operating system, hence, installing this software will not do any changes on your laptop. It is also quick to do so.
+Because of the differences in command line syntax between Windows vs Mac OS/Linux, it would be a great challenge for us to support and provide instructions for both Operating Systems. For this reason, we’d ask you to install Windows Subsystem for Linux which enables you to run Linux command lines inside Windows. Keep in mind that these are simply extensions to your Windows operating system, hence, installing this software will not do any changes on your laptop. It is also quick to do so.
 
-#### Windows 10 Setup
+**Step 1:** Follow **[this guide](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md)** to setup WSL on Windows 10.
 
-Follow [this guide](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md) if you are running Windows 10.
+**Step 2:** Open a terminal (remember **[this](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and run the following command:
 
-### MacOS Setup
+```bash
+sudo apt update && sudo apt upgrade && sudo apt install git
+```
+
+**Step 3:** Open a terminal (remember **[this](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md#Opening-the-WSL-terminal)**!!) and check if you already have `python3.7` by usind the command below. If your version is `Python 3.7.x` (`x` = any number), you can skip to step 4, otherwise continue with step 3.1 and 3.2
+
+```bash
+python3.7 --version
+```
+**Step 3.1:** Run the following commands to setup _Python 3.7_ (if you get an error with this command, check [this](#6-When-setting-up-python-3.7-i-get-an-error)
+):
+
+```bash
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
+
+**Step 3.2:** Run the following commands to install _Python 3.7_
+
+```bash
+sudo apt update && sudo apt install python3.7 -y
+```
+
+**Step 4** Run the following command to get `pip` and `venv`:
+```bash
+sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.7-venv -y
+```
+>**Why do we install these?**
+>
+> We'll be using `pip` which is the reference Python package manager. You should always use a virtual environment to install python packages. We'll use `venv` to set them up.
+
+<br>
+
+### MacOS Intel Setup
 
 Some of the steps in the following sections will require _Homebrew_ for MacOS.
 Homebrew will make it easier to install software that we will use later on.
-To open the terminal, choose one:
 
-* In Finder <img src='assets/finder.png' alt='Finder' width="4%" height="4%"/>, open the /Applications/Utilities folder, then double-click Terminal.
+**Step 1:** To open the terminal, choose one:
+* In Finder <img src='assets/finder.png' alt='Finder' width="4%" />, open the /Applications/Utilities folder, then double-click Terminal.
 * By pressing <kbd>cmd</kbd> + <kbd>space</kbd> then type `terminal` and press <kbd>enter</kbd>.
 
-The terminal should now be open:
+    The terminal should now be open:
 
-![mac_terminal](assets/mac_terminal.png)
+    <img src='assets/mac_terminal.png' width="50%" />
 
-Copy and paste the following line in the terminal:
+**Step 2:** To install Homebrew for MacOS, copy and paste the following line in the terminal:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-You may be offered to install the _Command Line Developer Tools_, confirm and
-once it's finished continue installing Homebrew by pressing <kbd>enter</kbd> again.
-
-You will need to install python, this can be done in a terminal by running:
+**Step 2.1:** Sometimes it's necessary to install xcode command line utils. To do so, do the following command before installing homebrew:
 
 ```bash
-brew install python
+xcode-select --install
 ```
+
+You may be prompted to install the _Command Line Developers Tools_. Confirm and, once it finishes, continue installing _Homebrew_ by pressing <kbd>enter</kbd> again.
+
+**Step 3:** open a terminal and run the following command:
+
+```bash
+brew update --verbose
+```
+
+**Step 4:** then run the following command:
+
+```bash
+brew install git
+```
+
+**Step 5:** then run the following command:
+
+```bash
+brew install python@3.7
+```
+
+**Step 6:** then run the following command:
+
+```bash
+brew link python@3.7
+```
+
+<br>
+
+### MacOS M1 Setup
+
+So you got the new M1 and you're supper happy with how fast it is.. Unfortunately dealing with apple silicon requires a little
+get around. You no longer have a intel chip and most things are available for intel. But don't worry, we'll be able to get there in the end.
+
+**Step 1:** To open the terminal, choose one:
+* In Finder <img src='assets/finder.png' alt='Finder' width="4%" />, open the /Applications/Utilities folder, then double-click Terminal.
+* By pressing <kbd>cmd</kbd> + <kbd>space</kbd> then type `terminal` and press <kbd>enter</kbd>.
+
+    The terminal should now be open:
+
+    <img src='assets/mac_terminal.png' width="50%" />
+
+<br>
+
+**Step 1.1:** To use intel-based software, you'll need Rosetta2. Most of you should already have it installed for varied reasons. If you don't simply run the following line in the terminal:
+
+```bash
+softwareupdate --install-rosetta
+```
+
+This will launch the rosetta installer and you’ll have to agree to a license agreement.
+
+
+**Step 2:** To install Homebrew x86 version, aka `ibrew` for MacOS, copy and paste the following line in the terminal:
+
+```bash
+arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+**Step 2.1:** Sometimes it's necessary to install xcode command line utils. To do so, do the following command before installing homebrew:
+
+```bash
+xcode-select --install
+```
+
+**Step 3:** Add an alias with `ibrew` to your $PATH
+
+```bash
+echo 'alias ibrew="arch -x86_64 /usr/local/bin/brew"' >> ~/.zshrc
+```
+
+**Step 4:** Activate the alterations done to .zshrc
+```bash
+source ~/.zshrc
+```
+
+**Step 5:** Install python 3.7 with `ibrew`
+
+```bash
+ibrew install python@3.7
+```
+
+**Step 6:** Add python 3.7 to $PATH
+
+```bash
+export PATH="/usr/local/opt/python@3.7/bin:$PATH" >> ~/.zshrc
+```
+
+**Step 7** Re-activate the alterations done to .zshrc
+```bash
+source ~/.zshrc
+```
+
+<br>
 
 ### Ubuntu Setup
 
-So you're using Ubuntu, hun? Well, kudos to you.
+So you're using Ubuntu, hun? Well, kudos to you. You just need to install a couple of packages.
 
-You just need to install a couple of packages,
-which can be done in a terminal by running:
+
+**Step 1:** Open a terminal and check what version of Python you have by using the command below. If your version is `Python 3.7.x` (`x` = any number), you can skip to step 2, otherwise continue with step 1.1 and 1.2
 
 ```bash
-sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3-venv
+python3.7 --version
 ```
+
+**Step 1.1:** Run the following commands to setup _Python 3.7_ (if you get an error with this command, check [this](#6-When-setting-up-python-3.7-i-get-an-error)
+):
+
+```bash
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
+
+**Step 1.2:** Run the following commands to install _Python 3.7_
+
+```bash
+sudo apt update && sudo apt install python3.7 -y
+```
+
+**Step 2** Run the following command to get `pip` and `venv`:
+```bash
+sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.7-venv -y
+```
+
+>**Why do we install these?**
+>
+> We'll be using `pip` which is the reference Python package manager. You should always use a virtual environment to install python packages. We'll use `venv` to set them up.
+
+<br>
 
 ### Setup for all Operating Systems
 
@@ -87,19 +241,19 @@ You should always be using a virtual environment to install python packages. We'
 
 To install and update packages, we'll be using _pip_ which is the reference Python package manager.
 
-##### Start by installing ensuring pip, setuptools, and wheel are up to date:
+**Step 1** Start by installing ensuring pip, setuptools, and wheel are up to date:
 
 ```bash
 python3 -m pip install --user --upgrade pip setuptools wheel
 ```
 
-* Create a virtual environment with the name `slu00`
+**Step 2** Create a virtual environment with the name `slu00`
 
 ```bash
 python3 -m venv ~/.virtualenvs/slu00
 ```
 
-* Activate the environment
+**Step 3** Activate the environment
 
 ```bash
 source ~/.virtualenvs/slu00/bin/activate
@@ -119,18 +273,17 @@ And you're able to make sure your virtual environment is active using the `which
 /Users/mig/.virtualenvs/slu00/bin/python
 ```
 
-Now update pip.
+**Step 4** Now update pip.
 
 ```bash
 (slu00) pip install -U pip
 ```
 
-### Setup Git and GitHub
+### Setup _Git_ and _GitHub_
 
-Having a _GitHub_ account and knowing the basics of committing and pushing
-changes are mandatory.
-By the end of this setup you will have accomplished both.
-Complete the following steps:
+Having a _GitHub_ account and knowing the basics of committing and pushing changes are mandatory for this academy.
+
+**If you don't have a _GitHub_ account, complete the following steps:**
 
 1. [Sign up](https://github.com/join) for a _GitHub_ account if you don't
 already have one.
@@ -139,11 +292,11 @@ already have one.
 1. [Adding a new SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 1. [Testing your SSH connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)
 
+
 ### Setup your Workspace Repository
 
-It's good practice to store your work with version control.
-In this academy that is a requirement as it is how you will make your work
-available to us.
+The workspace directory/repository is where you will place everything you
+are working on, solve exercises, make changes to files, etc. In this academy that is a requirement as it is how you will make your work available to us.
 
 #### Creating the Workspace
 
@@ -152,7 +305,7 @@ available to us.
 [Creating a new repository](https://help.github.com/en/articles/creating-a-new-repository).
 **IMPORTANT** The repo **MUST** be named *batch5-workspace*!
 If you name it anything else, you will be unable to submit any of your work!
-    1. You need to explicitly select Private - This is your work and nobody else's.
+    1. You need to explicitly select **Private** - This is your work and nobody else's.
     You will be graded based upon the merits of what you are able to do here
     so this should not be open to the world while you are working
     on it.
@@ -481,7 +634,7 @@ We provide you with some different channels to ask for help.
 ### Learning Unit
 
 If you feel something is not clear enough or there is a bug in the learning
-material please follow [these steps](https://github.com/LDSSA/wiki/wiki/How-to-ask-for-and-give-help). Remember, there is no such thing as a dumb question, and by asking questions publicly you will help others!
+material please follow [these steps](https://ldssa.github.io/wiki/Students/How-to-ask-for-and-give-help/). Remember, there is no such thing as a dumb question, and by asking questions publicly you will help others!
 
 If you have more conceptual questions about the materials or how to approach a problem you can also
 reach out to the instructors on slack.
@@ -518,6 +671,9 @@ Then please open a support ticket for the portal
 1. [When I pull from the `batch5-students` repository I get an error](#When-I-pull-from-the-batch5-students-repository-I-get-the-error)
 1. [When I try to open `jupyter notebook` I get an error](#When-I-try-to-open-jupyter-notebook-I-get-the-error)
 1. [When I use the `cp` command the `>` sign appears and the command does not execute](#When-I-use-the-`cp`-command-the->-sign-appears-and-the-command-does-not-execute)
+1. [When setting up python 3.7 I get an error](#When-setting-up-python-3.7-i-get-an-error)
+1. [Nothing happens when I type my password](#Nothing-happens-when-I-type-my-password)
+1. [I still have a NotImplemented error](#I-still-have-a-NotImplemented-error)
 1. [My problem is not listed here what should I do?](#My-problem-is-not-listed-here-what-should-I-do?)
 
 #### When I open Windows Explorer through Ubuntu it goes to a different folder than in the guide
@@ -579,16 +735,49 @@ cp -r ~/projects/batchr-students/"S01 - Bootcamp and Binary Classification"/"SLU
 
 Make sure to use this type of quotes `"` and not these ones `“`.
 
+#### When setting up python 3.7 I get an error
+
+When I run this command:
+
+```bash
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
+
+I get this error:
+
+```bash
+W: GPG error: http://apt.postgresql.org/pub/repos/apt focal-pgdg InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 7FCC7D46ACCC4CF8
+```
+
+Solution: Take the id in front of `NO_PUBKEY` (in my case its `7FCC7D46ACCC4CF8`) and run the following command:
+
+```bash
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7FCC7D46ACCC4CF8
+```
+
+#### Nothing happens when I type my password
+
+In **step two** it asks me for the computer password. However, I am not being able to write anything
+
+Solution:
+When you write your password you might not get any visual feedback and that's okay! Write it as normal and hit <kbd>enter</kbd> when you're done!
+
+#### I still have a NotImplemented error
+
+I've completed the exercise in the Exercise Notebook but when I run the cell I get a **NotImplementedError**.
+
+Solution:
+The `raise NotImplementedError()` are added to the exercise cell as a placeholder for where you're supposed to add your solution/code. It is meant to be removed!
+
 #### My problem is not listed here what should I do?
 
-If the above steps didn't solve the problem for you, please contact us on Slack or if you are not on slack, [open an issue](https://guides.github.com/features/issues/)
+If the above steps didn't solve the problem for you, please contact us on Slack or [open an issue](https://guides.github.com/features/issues/) in this repo.
 
 ### Other
 
-If your problem doesn't fit in any  of the previous categories head over to
-slack and ask.
+If your problem doesn't fit in any  of the previous categories head over to slack and ask.
 Someone will surely point you in the right direction.
 
 If you're looking for some specific part of our organization head over to the
-[Member Directory](https://github.com/LDSSA/wiki/wiki/Member-Directory)
+[Member Directory](https://ldssa.github.io/wiki/About%20us/Member-Directory/)
 and search for the area of responsibility you're looking for.
