@@ -1,6 +1,6 @@
 # Small Learning Unit 4 - Basic Stats with Pandas
 
-#### [Presentation](https://docs.google.com/presentation/d/1EkZwvzmn8deC4OFmOb5I-RUXHvfhvXX1VHKdfXxpeio/edit?usp=sharing)
+#### [Presentation](https://docs.google.com/presentation/d/1hkPomwOehzkLp4W3JMqF5aCjFNYQbKKJaPHCPmgw9xc/edit?usp=sharing)
 
 ## New concepts in this notebook
 - Minimum, maximum, argmin, argmax
