@@ -705,6 +705,7 @@ Then please open a support ticket for the portal
 1. [I still have a NotImplemented error](#I-still-have-a-NotImplemented-error)
 1. [I get an error when creating the virtual environment](#I-get-an-error-when-creating-the-virtual-environment)
 1. [My problem is not listed here what should I do?](#My-problem-is-not-listed-here-what-should-I-do?)
+1. [Tutorial videos from Prep Course 2020](#Tutorial-videos-from-Prep-Course-2020)
 
 #### When I open Windows Explorer through Ubuntu it goes to a different folder than in the guide
 
@@ -816,6 +817,15 @@ python3.7 -m venv ~/.virtualenvs/slu00
 
 If the above steps didn't solve the problem for you, please contact us on Slack or [open an issue](https://guides.github.com/features/issues/) in this repo.
 
+#### Tutorial videos from Prep Course 2020
+
+🎁🎬 Check the **tutorial videos** if you have any doubts after following this tutorial. These videos were made for the **Prep Course of year 2020**, so there may be some differences.
+
+ * [Setup guide for Windows - Part 1](https://www.youtube.com/watch?v=fWi3bYoHW18)
+* [Setup guide for Windows - Part 2](https://www.youtube.com/watch?v=bnJOQHh9pJ4)
+* [Setup guide for Mac](https://www.youtube.com/watch?v=qs0z4ibMFdU)
+* [Updates to Learning Units guide for Windows 10](https://www.youtube.com/watch?v=Q2Cezm6ufrE)
+* [Updates to Learning Units guide for Mac](https://www.youtube.com/watch?v=-fzIDfNBZ0I)
 ### Other
 
 If your problem doesn't fit in any  of the previous categories head over to slack and ask.
