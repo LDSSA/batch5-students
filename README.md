@@ -828,6 +828,7 @@ If you want a visual guide, you can look at the **tutorial videos** from the **P
 * [Setup guide for Mac](https://www.youtube.com/watch?v=qs0z4ibMFdU)
 * [Updates to Learning Units guide for Windows 10](https://www.youtube.com/watch?v=Q2Cezm6ufrE)
 * [Updates to Learning Units guide for Mac](https://www.youtube.com/watch?v=-fzIDfNBZ0I)
+
 ### Other
 
 If your problem doesn't fit in any  of the previous categories head over to slack and ask.
