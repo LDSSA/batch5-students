@@ -628,7 +628,7 @@ we offer no support for this at the moment.
 
 ### Add your Slack ID to the Portal
 
-Besides your *GitHub Handle*, you should add your **SlackID to the portal**. You can find information on how to find it [following this link](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c)
+In your **Profile** in the **Portal**, besides your *GitHub Handle*, you should add your **SlackID**. You can find information on how to find it [following this link](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c)
 
 ## Help
 
