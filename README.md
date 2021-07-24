@@ -819,7 +819,9 @@ If the above steps didn't solve the problem for you, please contact us on Slack 
 
 #### Tutorial videos from Prep Course 2020
 
-🎁🎬 Check the **tutorial videos** if you have any doubts after following this tutorial. These videos were made for the **Prep Course of year 2020**, so there may be some differences.
+If you want a visual guide, you can look at the **tutorial videos** from the **Prep Course of year 2020**. 
+
+:warning: These videos are **out of date**, and should only be used as a visual guide of what the setup process looks like. The steps you should follow are detailed in this document.
 
  * [Setup guide for Windows - Part 1](https://www.youtube.com/watch?v=fWi3bYoHW18)
 * [Setup guide for Windows - Part 2](https://www.youtube.com/watch?v=bnJOQHh9pJ4)
