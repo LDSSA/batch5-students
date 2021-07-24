@@ -17,6 +17,7 @@ Your first step in this journey is to **carefully read** the steps in this tutor
     1. [Setup your Workspace Repository](#setup-your-workspace-repository)
     1. [Get the Learning Material](#get-the-learning-material)
     1. [Running and Submitting a Learning Unit](#running-and-submitting-a-learning-unit)
+    1. [Add your Slack ID to the Portal](#Add-your-Slack-ID-to-the-Portal)
 1. [Learning Unit Workflow](#learning-unit-workflow)
 1. [Updates to Learning Units](#updates-to-learning-units)
 1. [Help](#help)
@@ -625,6 +626,10 @@ We understand it's not ideal and are working on improving this workflow using
 If you are comfortable installing _Python_ packages you can try it out, but
 we offer no support for this at the moment.
 
+### Add your Slack ID to the Portal
+
+In your **Profile** in the **Portal**, besides your *GitHub Handle*, you should add your **SlackID**. You can find information on how to find it [following this link](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c)
+
 ## Help
 
 During the academy you will surely run into problems and have doubts about the
@@ -729,7 +734,7 @@ source ~/.virtualenvs/slu00/bin/activate
 #### When I use the `cp` command the `>` sign appears and the command does not execute
 
 ```bash
-cp -r ~/projects/batchr-students/"S01 - Bootcamp and Binary Classification"/"SLU01 - Pandas 101" ~/projects/batch5-workspace/"S01 - Bootcamp and Binary Classification"
+cp -r ~/projects/batch5-students/"S01 - Bootcamp and Binary Classification"/"SLU01 - Pandas 101" ~/projects/batch5-workspace/"S01 - Bootcamp and Binary Classification"
 >
 ```
 
