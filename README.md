@@ -4,8 +4,8 @@ Welcome to **Lisbon Data Science Academy Batch 5** Students repository!
 
 Your first step in this journey is to **carefully read** the steps in this tutorial. You'll learn:
 
-- How to set up your environment;
-- The weekly workflow to follow during the Academy
+- :arrow_right: How to set up your environment;
+- :arrow_right: The weekly workflow to follow during the Academy
 
 1. [Initial Setup](#initial-setup)
     1. [Windows 10 Setup](#Windows-10-Setup)
@@ -34,12 +34,15 @@ Your first step in this journey is to **carefully read** the steps in this tutor
 
 ### Windows 10 Setup
 
-This section deals with setting up Windows Subsystem for Linux (WSL) on Windows 10.
-If you are using MacOS or Linux you can skip this section.
+This section deals with setting up **Windows Subsystem for Linux (WSL) on Windows 10**.
+
+> If you are using MacOS or Linux you can skip this section.
 
 **Why do I need to install WSL?**
 
-Because of the differences in command line syntax between Windows vs Mac OS/Linux, it would be a great challenge for us to support and provide instructions for both Operating Systems. For this reason, we’d ask you to install Windows Subsystem for Linux which enables you to run Linux command lines inside Windows. Keep in mind that these are simply extensions to your Windows operating system, hence, installing this software will not do any changes on your laptop. It is also quick to do so.
+Because of the differences in command line syntax between Windows vs Mac OS/Linux, it would be a great challenge for us to support and provide instructions for both Operating Systems. For this reason, we’d ask you to **install Windows Subsystem for Linux** which enables you to run Linux command lines inside Windows.
+
+:warning: Keep in mind that these are simply extensions to your Windows operating system, hence, installing this software will not do any changes on your laptop. It is also quick to do so. :warning: 
 
 **Step 1:** Follow **[this guide](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md)** to setup WSL on Windows 10.
 
@@ -132,8 +135,7 @@ brew link python@3.7
 
 ### MacOS M1 Setup
 
-So you got the new M1 and you're supper happy with how fast it is.. Unfortunately dealing with apple silicon requires a little
-get around. You no longer have a intel chip and most things are available for intel. But don't worry, we'll be able to get there in the end.
+So you got the new M1 and you're supper happy with how fast it is.. Unfortunately dealing with apple silicon requires a little get around. But don't worry, we'll be able to get there in the end.
 
 **Step 1:** To open the terminal, choose one:
 * In Finder <img src='assets/finder.png' alt='Finder' width="4%" />, open the /Applications/Utilities folder, then double-click Terminal.
@@ -145,7 +147,7 @@ get around. You no longer have a intel chip and most things are available for in
 
 <br>
 
-**Step 1.1:** To use intel-based software, you'll need Rosetta2. Most of you should already have it installed for varied reasons. If you don't simply run the following line in the terminal:
+**Step 1.1:** To use intel-based software, you'll need **Rosetta2**. Most of you should already have it installed for varied reasons. If you don't simply run the following line in the terminal:
 
 ```bash
 softwareupdate --install-rosetta
@@ -238,7 +240,7 @@ sudo apt update && sudo apt upgrade && sudo apt install python3-pip python3.7-ve
 Bellow are the instructions that are enough to get the setup done and get you up and running :)
 You can also follow [this guide](guides/How_to_set_up_python_virtual_environments.md) for a more in depth set of instructions that accomplish exactly the same thing.
 
-You should always be using a virtual environment to install python packages. We'll use _venv_ to set them up.
+:warning: **You should always be using a virtual environment to install python packages.** :warning: We'll use _venv_ to set them up.
 
 To install and update packages, we'll be using _pip_ which is the reference Python package manager.
 
@@ -282,22 +284,24 @@ And you're able to make sure your virtual environment is active using the `which
 
 ### Setup _Git_ and _GitHub_
 
-Having a _GitHub_ account and knowing the basics of committing and pushing changes are mandatory for this academy.
+Having a _GitHub_ account and knowing the basics of committing and pushing changes are **mandatory** for this academy.
 
-**If you don't have a _GitHub_ account, complete the following steps:**
+:warning:**If you don't have a _GitHub_ account, complete the following steps:**
 
 1. [Sign up](https://github.com/join) for a _GitHub_ account if you don't
 already have one.
+
+:warning:**If you have a _GitHub_ account but git is not set up in your system, complete the following steps:**
+
 1. [Checking for existing SSH keys](https://help.github.com/en/github/authenticating-to-github/checking-for-existing-ssh-keys)
 1. [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 1. [Adding a new SSH key to your GitHub account](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 1. [Testing your SSH connection](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection)
 
-
 ### Setup your Workspace Repository
 
-The workspace directory/repository is where you will place everything you
-are working on, solve exercises, make changes to files, etc. In this academy that is a requirement as it is how you will make your work available to us.
+The workspace directory/repository is where you will place everything you are working on, solve exercises, make changes to files, etc.
+In this academy that **is a requirement** as it is how you will make your work available to us.
 
 #### Creating the Workspace
 
@@ -348,8 +352,17 @@ _Portal_
 
     > If you're not sure where to clone the repository in, you can create a `~/projects` folder, and clone it there
 
+1. Clone the students repository
+If you have your [**ssh keys set up**](#Setup-Git-and-GitHub) as instructed:
+
 ```bash
-git clone git@github.com:<username>/batch5-workspace.git
+git clone git@github.com:LDSSA/<username>/batch5-workspace.git
+```
+
+else
+
+```bash
+git clone https://github.com/<username>/batch5-workspace.git
 ```
 
 ### Get the Learning Material
@@ -433,7 +446,13 @@ So let's start the Jupyter Notebook app:
     ```
 
 1. Run the jupyter notebook
-    >**Windows 10 note:** if you are running **Windows 10** with WSL, the command to run the jupyter notebook is: `jupyter notebook --NotebookApp.use_redirect_file=False`
+If you are running **WLS on Windows 10** run the following:
+
+    ```bash
+    jupyter notebook --NotebookApp.use_redirect_file=False
+    ```
+
+else:
 
     ```bash
     jupyter notebook
@@ -521,6 +540,11 @@ solutions are then released the next Monday.
 The steps you followed during the initial setup are exactly what you are going
 to be doing for each new Learning Unit.
 Here's a quick recap:
+
+0. If you haven't, activate your virtual environment
+    ```bash
+    source ~/.virtualenvs/slu00/bin/activate
+    ```
 
 1. Once a new Learning Unit is available, pull the changes from the [batch5-students](https://github.com/LDSSA/batch5-students) repo:
     * enter the `~/projects/batch5-students/` using the `cd` command, then use the `git pull` command:
@@ -679,7 +703,9 @@ Then please open a support ticket for the portal
 1. [When setting up python 3.7 I get an error](#When-setting-up-python-3.7-i-get-an-error)
 1. [Nothing happens when I type my password](#Nothing-happens-when-I-type-my-password)
 1. [I still have a NotImplemented error](#I-still-have-a-NotImplemented-error)
+1. [I get an error when creating the virtual environment](#I-get-an-error-when-creating-the-virtual-environment)
 1. [My problem is not listed here what should I do?](#My-problem-is-not-listed-here-what-should-I-do?)
+1. [Tutorial videos from Prep Course 2020](#Tutorial-videos-from-Prep-Course-2020)
 
 #### When I open Windows Explorer through Ubuntu it goes to a different folder than in the guide
 
@@ -774,9 +800,34 @@ I've completed the exercise in the Exercise Notebook but when I run the cell I g
 Solution:
 The `raise NotImplementedError()` are added to the exercise cell as a placeholder for where you're supposed to add your solution/code. It is meant to be removed!
 
+#### I get an error when creating the virtual environment
+
+I ran `python3 -m venv ~/.virtualenvs/slu00`, but got the following error:
+
+>The virtual environment was not created successfully because ensurepip is not available.
+
+This can happen if either you [skipped the installation of python-pip](#Setup-for-all-Operating-Systems), or the version of the python you're calling doesn't have python pip installed.
+
+As we're using python3.7 for this academy, and if you've followed all the steps in this README correctly, you should be able to create the virtual environment with:
+
+```bash
+python3.7 -m venv ~/.virtualenvs/slu00
+```
 #### My problem is not listed here what should I do?
 
 If the above steps didn't solve the problem for you, please contact us on Slack or [open an issue](https://guides.github.com/features/issues/) in this repo.
+
+#### Tutorial videos from Prep Course 2020
+
+If you want a visual guide, you can look at the **tutorial videos** from the **Prep Course of year 2020**. 
+
+:warning: These videos are **out of date**, and should only be used as a visual guide of what the setup process looks like. The steps you should follow are detailed in this document.
+
+ * [Setup guide for Windows - Part 1](https://www.youtube.com/watch?v=fWi3bYoHW18)
+* [Setup guide for Windows - Part 2](https://www.youtube.com/watch?v=bnJOQHh9pJ4)
+* [Setup guide for Mac](https://www.youtube.com/watch?v=qs0z4ibMFdU)
+* [Updates to Learning Units guide for Windows 10](https://www.youtube.com/watch?v=Q2Cezm6ufrE)
+* [Updates to Learning Units guide for Mac](https://www.youtube.com/watch?v=-fzIDfNBZ0I)
 
 ### Other
 
