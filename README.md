@@ -356,7 +356,7 @@ _Portal_
 If you have your [**ssh keys set up**](#Setup-Git-and-GitHub) as instructed:
 
 ```bash
-git clone git@github.com:LDSSA/<username>/batch5-workspace.git
+git clone git@github.com:<username>/batch5-workspace.git
 ```
 
 else
