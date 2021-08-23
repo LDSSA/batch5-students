@@ -29,4 +29,4 @@ Good luck!
 
 ## "I need help understanding something"
 
-You can and should ask for help, be it about Learning Notebooks, Exercises, or anything else. Please check out the [How to Ask for Help](https://ldssa.github.io/wiki/Students/How-to-ask-for-and-give-help/) guide, and remember not to share code when asking for help about the exercises! 
+You can and should ask for help, be it about Learning Notebooks, Exercises, or anything else. Please check out the [How to Ask for Help](https://ldssa.github.io/wiki/Starters%20Academy%20(LDSSA)/How-to-ask-for-and-give-help/) guide, and remember not to share code when asking for help about the exercises! 
