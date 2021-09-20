@@ -1,0 +1,9 @@
+jupyter==1.0.0
+jupyter-client==6.1.12
+nbgrader==0.6.2
+numpy==1.19
+pandas==1.2.4
+matplotlib==3.4.2
+scikit_learn==0.24.2
+statsmodels==0.11.1
+pmdarima==1.7.1
