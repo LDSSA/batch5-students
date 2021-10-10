@@ -8,4 +8,4 @@ scikit-learn==0.24.2    # base
 scipy==1.6.3            # additional - used by many units
 seaborn==0.11.1         # additional - used by many units
 nltk==3.6.2
-jupyter-client==6.1.12
+jupyter-client==6.1.12  # breaks without this
