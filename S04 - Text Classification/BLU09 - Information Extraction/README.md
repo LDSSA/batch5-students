@@ -17,7 +17,7 @@ By now you should already know the process by heart, nevertheless here it is:
 
 ## "I need help understanding something"
 
-You can and should ask for help, be it about Learning Notebooks, Exercises, or anything else. Please checkout the [How to Ask for Help](https://github.com/LDSSA/wiki/wiki/How-to-ask-for-and-give-help), and remember not to share code when asking for help about the exercises! 
+You can and should ask for help, be it about Learning Notebooks, Exercises, or anything else. Please checkout the [How to Ask for Help](https://ldssa.github.io/wiki/Starters%20Academy%20(LDSSA)/How-to-ask-for-and-give-help/), and remember not to share code when asking for help about the exercises! 
 
 ## "I think I've found a bug"
 
