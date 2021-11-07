@@ -1,0 +1,15 @@
+click==7.1.1            # base
+jupyter==1.0.0         
+jupyter-client==6.1.12  
+ipython==7.25.0         # base
+matplotlib==3.4.2       # additional - used by many units
+nbgrader==0.6.2         # base
+notebook==6.4.0         # base
+nltk==3.6.2
+numpy==1.20.3           # base
+pandas==1.2.4           # base
+scikit-learn==0.24.2    # base
+scipy==1.6.3            # additional - used by many units
+seaborn==0.11.1         # additional - used by many units
+spacy==3.1.1
+https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.1.0/en_core_web_md-3.1.0.tar.gz#egg=en_core_web_md
