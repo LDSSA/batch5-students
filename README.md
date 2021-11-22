@@ -1,6 +1,6 @@
 # Batch 5 Students Repository
 
-Welcome to **Lisbon Data Science Academy Batch 5** Students repository! 
+Welcome to **Lisbon Data Science Academy Batch 5** Students repository!
 
 Your first step in this journey is to **carefully read** the steps in this tutorial. You'll learn:
 
@@ -23,7 +23,7 @@ Your first step in this journey is to **carefully read** the steps in this tutor
 1. [Help](#help)
     1. [Learning Unit](#learning-unit-workflow)
     1. [_Portal_](#_portal_)
-    1. [Troubleshooting](#Troubleshooting)
+    1. [Troubleshooting](#troubleshooting)
     1. [Other](#other)
 
 <br>
@@ -42,7 +42,7 @@ This section deals with setting up **Windows Subsystem for Linux (WSL) on Window
 
 Because of the differences in command line syntax between Windows vs Mac OS/Linux, it would be a great challenge for us to support and provide instructions for both Operating Systems. For this reason, we’d ask you to **install Windows Subsystem for Linux** which enables you to run Linux command lines inside Windows.
 
-:warning: Keep in mind that these are simply extensions to your Windows operating system, hence, installing this software will not do any changes on your laptop. It is also quick to do so. :warning: 
+:warning: Keep in mind that these are simply extensions to your Windows operating system, hence, installing this software will not do any changes on your laptop. It is also quick to do so. :warning:
 
 **Step 1:** Follow **[this guide](guides/Windows_Subsystem_for_Linux_Installation_Guide_for_Windows_10.md)** to setup WSL on Windows 10.
 
@@ -704,6 +704,7 @@ Then please open a support ticket for the portal
 1. [Nothing happens when I type my password](#Nothing-happens-when-I-type-my-password)
 1. [I still have a NotImplemented error](#I-still-have-a-NotImplemented-error)
 1. [I get an error when creating the virtual environment](#I-get-an-error-when-creating-the-virtual-environment)
+1. [Checksum verification failed](#Checksum-verification-failed)
 1. [My problem is not listed here what should I do?](#My-problem-is-not-listed-here-what-should-I-do?)
 1. [Tutorial videos from Prep Course 2020](#Tutorial-videos-from-Prep-Course-2020)
 
@@ -813,13 +814,20 @@ As we're using python3.7 for this academy, and if you've followed all the steps 
 ```bash
 python3.7 -m venv ~/.virtualenvs/slu00
 ```
+
+#### Checksum verification failed
+
+I'm getting "checksum verification failed" on a portal submission.
+
+Some metadata can change when you open your jupyter notebook using vscode. Try running the notebooks from start to end in Jupyter and resubmit.
+
 #### My problem is not listed here what should I do?
 
 If the above steps didn't solve the problem for you, please contact us on Slack or [open an issue](https://guides.github.com/features/issues/) in this repo.
 
 #### Tutorial videos from Prep Course 2020
 
-If you want a visual guide, you can look at the **tutorial videos** from the **Prep Course of year 2020**. 
+If you want a visual guide, you can look at the **tutorial videos** from the **Prep Course of year 2020**.
 
 :warning: These videos are **out of date**, and should only be used as a visual guide of what the setup process looks like. The steps you should follow are detailed in this document.
 
