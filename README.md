@@ -247,13 +247,13 @@ To install and update packages, we'll be using _pip_ which is the reference Pyth
 **Step 1** Start by installing ensuring pip, setuptools, and wheel are up to date:
 
 ```bash
-python3 -m pip install --user --upgrade pip setuptools wheel
+python3.7 -m pip install --user --upgrade pip setuptools wheel
 ```
 
 **Step 2** Create a virtual environment with the name `slu00`
 
 ```bash
-python3 -m venv ~/.virtualenvs/slu00
+python3.7 -m venv ~/.virtualenvs/slu00
 ```
 
 **Step 3** Activate the environment
@@ -571,13 +571,13 @@ Here's a quick recap:
     * To do this you will run the following command:
 
     ```bash
-    python3 -m venv ~/.virtualenvs/<learning unit ID>
+    python3.7 -m venv ~/.virtualenvs/<learning unit ID>
     ```
 
     * and you would replace the `<learning unit ID>` with the learning unit ID, such that for SLU01, for example, the command would be:
 
     ```bash
-    python3 -m venv ~/.virtualenvs/slu01
+    python3.7 -m venv ~/.virtualenvs/slu01
     ```
 
 1. Activate your virtual environment
@@ -803,7 +803,7 @@ The `raise NotImplementedError()` are added to the exercise cell as a placeholde
 
 #### I get an error when creating the virtual environment
 
-I ran `python3 -m venv ~/.virtualenvs/slu00`, but got the following error:
+I ran `python3.7 -m venv ~/.virtualenvs/slu00`, but got the following error:
 
 >The virtual environment was not created successfully because ensurepip is not available.
 
