@@ -1,0 +1,12 @@
+jupyter==1.0.0
+jupyter-client==6.1.12
+nbgrader==0.6.2
+numpy==1.19
+pandas==1.2.4
+scikit_learn==0.24.2
+matplotlib==3.4.2
+lightFM==1.16
+scikit-surprise==1.1.1
+ml_metrics==0.1.4
+psutil==5.8.0
+optuna==2.10.0
