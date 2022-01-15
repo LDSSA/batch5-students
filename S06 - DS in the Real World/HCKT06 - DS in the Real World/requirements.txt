@@ -1,0 +1,17 @@
+click==7.1.1            # base
+jupyter==1.0.0         
+jupyter-client==6.1.12  
+ipython==7.25.0         # base
+matplotlib==3.4.2       # additional - used by many units
+nbgrader==0.6.2         # base
+notebook==6.4.0         # base
+numpy==1.20.3           # base
+pandas==1.2.4           # base
+scikit-learn==0.24.2    # base
+scipy==1.6.3            # additional - used by many units
+seaborn==0.11.1         # additional - used by many units
+joblib==1.1.0
+lightgbm==3.3.1
+requests==2.26.0
+flask==2.0.2
+peewee==3.14.8
